@@ -4,8 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;600&display=swap">
     <title>Employee Payroll form</title>
     <link rel="stylesheet" href="employeePayroll.css">
+    <script defer src="employeepayroll.js"></script>
 </head>
 <body>
     <header class="header-content header">
@@ -27,9 +29,59 @@
             <label class="lable text"
              for="name">Name</label>
              <input class="input" type="text" id="name" name="name" placeholder="your name.." required>
-
-        </div>
+            </div>
+            <div class="row-content">
+                <label class="lable text" for="profile">Profile image</label>
+                <div class="profile-radio-content">
+                    <label>
+                        <input type="radio" id="profile1" name="profile" value="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg" required>
+                        <img class="profile" id='image1' src="https://thumbs.dreamstime.com/b/profile-picture-caucasian-male-employee-posing-office-happy-young-worker-look-camera-workplace-headshot-portrait-smiling-190186649.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile2" name="profile" value="https://www.viennashots.com/wp-content/uploads/2021/05/0283_Portait_HGI_AL-e1559232363840.jpg" required>
+                        <img class="profile" id='image2' src="https://www.viennashots.com/wp-content/uploads/2021/05/0283_Portait_HGI_AL-e1559232363840.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile3" name="profile" value="https://cdn.xxl.thumbs.canstockphoto.com/happy-employee-portrait-of-successful-businesswoman-looking-at-camera-with-smile-picture_csp7091881.jpg" required>
+                        <img class="profile" id='image3' src="https://cdn.xxl.thumbs.canstockphoto.com/happy-employee-portrait-of-successful-businesswoman-looking-at-camera-with-smile-picture_csp7091881.jpg">
+                    </label>
+                    <label>
+                        <input type="radio" id="profile4" name="profile" value="https://thumbs.dreamstime.com/b/happy-professional-employee-man-smiling-portrait-face-223792377.jpg" required>
+                        <img class="profile" id='image4' src="https://thumbs.dreamstime.com/b/happy-professional-employee-man-smiling-portrait-face-223792377.jpg">
+                    </label>
+                    </div>
+                    </div>
+                    <div class="row-content">
+                        <label class="label text" for="gender">Gender</label>
+                    <div>
+                    <input type="radio" id="male" name="gender" value="male">
+                    <label class="text" for="male">Male</label>
+                    <input type="radio" id="female" name="gender" value="female">
+                    <label class="text" for="female">Female</label>
+                    </div>   
+                 </div>
+                 <div class="row-content">
+                    <label class="label text" for="department">Department</label>
+                    <div>
+                        <input class="checkbox" type="checkbox" id="hr" name="hr" value="HR">
+                        <label class="text" for="hr">HR</label>
+                        <input class="checkbox" type="checkbox" id="sales" name="sales" value="Sales">
+                        <label class="text" for="sales">Sales</label>
+                        <input class="checkbox" type="checkbox" id="finance" name="finance" value="Finance">
+                        <label class="text" for="finance">Finance</label>
+                        <input class="checkbox" type="checkbox" id="engineer" name="engineer" value="Engineer">
+                        <label class="text" for="engineer">Engineer</label>
+                        <input class="checkbox" type="checkbox" id="others" name="others" value="Others">
+                        <label class="text" for="others">Others</label>
+                    </div>
+                 </div>
+                 <div class="row-content">
+                    <label class="label text" for="salary">Choose your salary</label>
+                    <input class="input" type="range" name="salary" id="salary" min="300000" max="500000" step="100" value="400000">
+                    <output class="salary-output text" for="salary">400000</output>
+                 </div>
     </form>
     </div>
+   
 </body>
 </html>
